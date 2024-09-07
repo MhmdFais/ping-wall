@@ -12,6 +12,7 @@ app.set("view engine", "ejs")
 
 app.use("/", indexRouter)
 app.use("/new", newRouter)
+app.use(express.urlencoded({ extended: true }));
 
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`)
