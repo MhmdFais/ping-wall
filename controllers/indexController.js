@@ -10,3 +10,15 @@ const messages = [
         added: new Date() 
     }
 ]
+
+const control = {
+    get: (req, res) => {
+        res.render("index", {messages: messages})
+    }
+}
+
+module.exports = {
+    control,
+    messages
+}
+

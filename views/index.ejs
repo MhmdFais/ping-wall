@@ -6,8 +6,9 @@
     <title>Messages</title>
 </head>
 <body>
-    <div class="content-container">
+    <div class="upper-container">
         <h1>Ping Wall</h1>
+        <a href="./new">+Add New</a>
     </div>
     <div class="messages-board">
         <ul>
@@ -15,11 +16,11 @@
                 <li>
                     <div class="message-div">
                         <div class="first-set">
-                            <h2>message.userName</h2>
-                            <h3>message.message</h3>
+                            <h2><%= message.userName %></h2> 
+                            <h3><%= message.added %></h3> 
                         </div>
                         <div class="second-set">
-                            <h3>message.added</h3>
+                            <h3><%= message.message %></h3>
                         </div>
                     </div>
                 </li>
