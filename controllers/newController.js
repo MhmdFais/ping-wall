@@ -1,4 +1,4 @@
-const indexCon = require('../controllers/indexController')
+const messages = require('../models/messages')
 
 module.exports = {
     get: (req, res) => {
@@ -11,7 +11,7 @@ module.exports = {
             message: req.body.message,
             added: new Date().toLocaleDateString()
         }
-        indexCon.messages.push(newEntry)
+        messages.push(newEntry)
         res.redirect('/')
     }
 }
