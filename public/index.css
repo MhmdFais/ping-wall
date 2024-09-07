@@ -1,0 +1,75 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.upper-container{
+    padding: 1rem 15rem;
+    background-color: rgb(148, 240, 240);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upper-container h1{
+    font-size: clamp(2rem, 2vw, 3rem);
+}
+
+.upper-container a{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(99, 119, 60);
+    background-color: rgb(199, 228, 141);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.upper-container a:hover{
+    background-color: rgb(155, 182, 101);
+}
+
+.messages-board{
+    padding: 1rem 18rem;
+    display: grid;
+}
+
+.message-div{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.first-set{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2, h3{
+    padding: 0;
+    margin: 0;
+}
+
+.first-set h2{
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+h3{
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    color: darkslategrey;
+}
