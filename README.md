@@ -4,6 +4,8 @@ Ping Wall is a simple message board application built with Node.js, Express, and
 
 # Live Demo
 
+Click here to go to demo [demo](https://ping-wall-production.up.railway.app/)
+
 # Features 
 
 - Users can add messages with their name and the message body
